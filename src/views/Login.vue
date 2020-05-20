@@ -6,7 +6,17 @@
 
 <script>
 export default {
-  name: 'Login'
+  name: 'Login',
+  method:{
+    login(){
+      this.loading = true
+      let userInfo = {
+        account:this.loginForm.account,
+        password: this.loginForm.password,
+        captcha:this.loginForm.captcha
+      }
+    }
+  }
 }
 </script>
 
